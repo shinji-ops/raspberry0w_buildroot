@@ -14,4 +14,6 @@ WORKDIR /work
 RUN wget https://buildroot.org/downloads/buildroot-2022.02.4.tar.gz && tar xzvf buildroot-2022.02.4.tar.gz
 RUN mv /work/buildroot-2022.02.4 /work/buildroot
  
+COPY scripts/build.sh /work/buildroot/build.sh
+COPY scripts/imgcopy.sh /work/buildroot/imgcopy.sh
 
